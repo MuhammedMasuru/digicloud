@@ -1,12 +1,53 @@
 
-.container{
+.main--container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
 }
-header{
+
+
+/* start for header styling */
+ .nav {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+
+ }
+
+ .container {
+     height: 10%;
+     width: 100%;
+     background-color: #002A50;
+ }
+
+ .links ul {
+     display: flex;
+     list-style-type: none;
+ }
+
+ .links ul li a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ .links ul li {
+     padding-right: 70px;
+ }
+
+
+ .cloud {
+     color: #fff;
+     padding-left: 3%;
+     margin-top: 14px;
+     font-size: 20px;
+ }
+ /* End header styling */
+
+
+
+/* header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +67,7 @@ margin-left: 1em;
     list-style: none;
     margin-right: 1em;
     color: #fff; 
-}
+} */
 p,
 div {
     font-family: 'Montserrat', sans-serif;
@@ -113,7 +154,143 @@ position: relative;
     font-size: 2.5rem; 
     opacity: 1;
 }
-footer{
+
+
+/* starting of footer styling */
+.africa {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-left: 80px;
+    margin-right: 40px;
+    padding-top: 30px;
+    width: 100%;
+    height: 250px;
+    background-color: #002A50;
+}
+
+.here {
+    font-size: 30px;
+    color: #fff;
+}
+
+.here p {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #ccc;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.here h5 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.here h6 {
+    border: 1px solid white;
+    border-radius: 20px;
+    color: #002A50;
+    font-size: 15px;
+    background-color: #fff;
+    padding: 10px;
+    width: 90px;
+}
+
+.short p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.across {
+    color: #fff;
+}
+
+.across p {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.across ul li {
+    list-style-type: none;
+    padding: 7px;
+    /* margin-right: 150px; */
+}
+
+.across ul li a {
+    font-size: 20px;
+
+}
+
+.africa .follow {
+    color: #fff;
+    padding-right: 20%;
+    font-size: 20px;
+}
+
+.fa-brands {
+    padding: 20px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    width: 100%;
+    background-color: #002A50;
+    color: #fff;
+    padding-top: 8px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+@media screen and (max-width: 816px) {
+    .nav {
+        /* display: flex; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .container {
+        height: 10%;
+        width: 100%;
+        background-color: #002A50;
+    }
+
+    .links ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .links ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .links ul li {
+        padding-right: 70px;
+    }
+
+
+    .cloud {
+        color: #fff;
+        padding-left: 3%;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+}
+
+/* Ending of footer styling */
+
+
+
+
+/* footer{
 color: #fff;
 }
 .copyright--footer--1{
@@ -165,7 +342,7 @@ background-color: #002a50;
 }
 .fa-solid{
     padding-right: 0.4em;
-} 
+}  */
 
 /* @media (max-width: 768px) {
     .Navbar {
