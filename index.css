@@ -72,7 +72,7 @@ p,
 div {
     font-family: 'Montserrat', sans-serif;
 }
-main,footer{
+main{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -84,6 +84,10 @@ width: 80%;
     color: #000;
     font-size: 1.5rem;
     text-align: center;
+}
+.single--paragragh a{
+
+ text-decoration: none  ;
 }
 .text--section{
     text-align: center;
@@ -99,30 +103,73 @@ width: 80%;
 .text--section,hr{
     width: 50%;
 }
+
 .cards--section{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    grid-gap: 4em;
-    margin: 2rem auto;
-} 
+    grid-gap: 1em;
+    text-align: center;
+    
+    
+ } 
 .card{
-width:  5%;
-height: 10vh; 
-margin: .2em;
-padding: 3em 6em; 
-background-color:#002a50;
+width: 15%;
+height: 10vh;
+margin: .1em;
+padding: 4em; 
+color:#ffffff;
 border-radius: 0.5rem;
-font-size: 1rem;
-position: relative;
+font-size: 1.5rem;
+background: linear-gradient(50deg, rgba(00, 00, 00, 0.2), rgba(00, 00, 00, 0.5)), url(../images/istockphoto-865142998-170667a.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
-.card p{
+
+.img--1{
+    background: linear-gradient(50deg, rgba(00,00,00,0.2), rgba(00,00,00,0.9)), url(../images/istockphoto-865142998-170667a.jpg);
+    
+}
+.img--2 {
+    background: linear-gradient(50deg, rgba(00, 00, 00, 0.2), rgba(00, 00, 00, 0.9)), url(../images/istockphoto-1440263343-170667a.jpg);
    
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    transform: translate(1%, 100%);
 }
+.img--3 {
+    background: linear-gradient(50deg, rgba(00, 00, 00, 0.2), rgba(00, 00, 00, 0.9)), url(../images/istockphoto-1409475480-170667a\ \(1\).jpg);
+   
+}
+.img--4 {
+    background: linear-gradient(50deg, rgba(00, 00, 00, 0.2), rgba(00, 00, 00, 0.9)), url(../images/istockphoto-1409475480-170667a.jpg);
+ 
+}
+.img--5{
+    background: linear-gradient(50deg, rgba(00, 00, 00, 0.2), rgba(00, 00, 00, 0.9)), url(../images/istockphoto-1398247146-170667a.jpg);
+   
+}
+.img--6 {
+    background: linear-gradient(50deg, rgba(00, 00, 00, 0.2), rgba(00, 00, 00, 0.9)), url(../images/istockphoto-1387498646-170667a.jpg);
+   
+}
+.img--7 {
+    background: linear-gradient(50deg, rgba(00, 00, 00, 0.2), rgba(00, 00, 00, 0.9)), url(../images/istockphoto-1355030282-170667a.jpg);
+
+}
+.img--8 {
+    background: linear-gradient(50deg, rgba(00, 00, 00, 0.2), rgba(00, 00, 00, 0.9)), url(../images/istockphoto-1354192776-170667a.jpg);
+   
+}
+
+ .card p{
+
+/* 
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(1%, 5%);    */
+}  
 .block{
     display: flex;
     justify-content: space-around;
@@ -137,7 +184,7 @@ position: relative;
     width: 100%;
     height: 80vh;
     border-radius: .5em;
-    background: linear-gradient(50deg, rgba(63, 59, 59, 0.5), rgba(161, 145, 145, 0.5)), url(../images/istockphoto-1387498646-170667a.jpg);
+    background: linear-gradient(50deg, rgba(32, 31, 31, 0.5), rgba(46, 45, 45, 0.5)), url(../images/istockphoto-1387498646-170667a.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: cover;
@@ -148,11 +195,16 @@ position: relative;
 .center--text{
    position: absolute;
    top: 50%;
-   left: 50%;
+   left: 30%;
     transform: translate(-50%,-50%);
-    color: #002a50;
+    color: #ffffff;
     font-size: 2.5rem; 
     opacity: 1;
+    line-height: 1.5em;
+}
+span{
+    color: #002A50;
+    letter-spacing: 0.1em;
 }
 
 
@@ -247,10 +299,66 @@ position: relative;
     padding-right: 70px;
 
 }
+
+/* Destop responsiveness */
+/* @media screen and (max-width:1200px){
+    .single--paragragh,
+        .text--section {
+           
+        }
+    
+        .cards--section,
+        .block {
+           
+    
+    
+        }
+    
+        .card {
+            
+        }
+
+} */
+/* End of Destop responsiveness */
+
+
+/* responsiveness on laptop size */
+
+
+@media only screen and (max-width: 992px){
+    
+}
+/* End of responsiveness on laptop */
+
+/* responsiveness for mobile version */
+@media only screen and  (max-width:600px){
+    .single--paragragh,
+    .text--section{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .cards--section,
+    .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .card{
+        width:50%;
+    }
+}
+/* End of mobile responsiveness */
+     
+
 @media screen and (max-width: 816px) {
     .nav {
-        /* display: flex; */
-        flex-wrap: wrap;
+        display: block; 
+        flex-wrap: row wrap;
         justify-content: space-between;
 
     }
