@@ -252,6 +252,73 @@ top:6rem;
 
     /* Responsivenes */
 
+  @media only screen and (max-width:1440px) and (min-width:1201px) {
+
+
+.Sign {
+top:8rem;
+left:29rem;
+}
+
+.start {
+    top:12rem;
+    left:32.5rem;
+
+}
+
+.Top-Part > h2 {
+    font-size:1.8rem;
+    top:24rem;
+    left:27.5rem;
+}
+
+
+.Top-Part > hr {
+    width:28rem;
+    top:30rem;
+    left:30rem;
+}
+
+
+.box {
+    margin-left: 37rem;
+   
+}
+
+.box >h1 {
+margin-top:25px;
+font-size:40px;
+}
+
+
+.submitbut {
+left:23rem;
+
+}
+
+
+.Contact > hr {
+    margin-left:13.5rem;
+}
+
+
+.hotline {
+   margin-left: 15rem;
+
+}
+
+
+.loc-text {
+    margin-left: 38rem;
+}
+
+  }
+
+
+
+
+
+
 
 
     @media only screen and (max-width:1280px) {
