@@ -16,7 +16,7 @@ disableOnInteraction: false,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40,
     },
     1024: {
